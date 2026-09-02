@@ -843,33 +843,27 @@ if INSTRUCTOR_KEY:
 
 with st.expander("📘 Theory"):
 
-    st.markdown(
-        r"""
-### Region I — Incident and reflected waves
+    st.markdown(r"""
+### Region I — Incident and Reflected Waves
 
 For \(x < 0\),
 
 \[
-\psi_I(x)
-=
-e^{ikx}
-+
-r e^{-ikx}
+\psi_I(x) = e^{ikx} + r e^{-ikx}
 \]
 
 where
 
 \[
-k =
-\sqrt{\frac{2mE}{\hbar^2}}
+k = \sqrt{\frac{2mE}{\hbar^2}}
 \]
 
-The first term is the incident wave and the second term
-is the reflected wave.
+The first term is the **incident wave**, and the second term is the
+**reflected wave**.
 
 ---
 
-### Region II — Inside the barrier
+### Region II — Inside the Barrier
 
 For
 
@@ -880,36 +874,28 @@ For
 the wavefunction is
 
 \[
-\psi_{II}(x)
-=
-C e^{\kappa x}
-+
-D e^{-\kappa x}
+\psi_{II}(x) =
+C e^{\kappa x} + D e^{-\kappa x}
 \]
 
-where, for \(E<V_0\),
+where, for \(E < V_0\),
 
 \[
-\kappa
-=
-\sqrt{
-\frac{2m(V_0-E)}{\hbar^2}
-}
+\kappa =
+\sqrt{\frac{2m(V_0-E)}{\hbar^2}}
 \]
 
-The wavefunction therefore decays exponentially inside
-the classically forbidden region.
+The wavefunction therefore decays exponentially inside the
+**classically forbidden region**.
 
 ---
 
-### Region III — Transmitted wave
+### Region III — Transmitted Wave
 
-For \(x>a\),
+For \(x > a\),
 
 \[
-\psi_{III}(x)
-=
-t e^{ikx}
+\psi_{III}(x) = t e^{ikx}
 \]
 
 The magnitude of the transmission amplitude is
@@ -921,24 +907,23 @@ The magnitude of the transmission amplitude is
 and the transmission coefficient is
 
 \[
-T=|t|^2
+T = |t|^2
 \]
 
 Similarly,
 
 \[
-R=|r|^2
+R = |r|^2
 \]
 
 and conservation of probability gives
 
 \[
-R+T=1
+R + T = 1
 \]
 
 up to numerical precision.
-"""
-    )
+""")
 
 
 # ============================================================
