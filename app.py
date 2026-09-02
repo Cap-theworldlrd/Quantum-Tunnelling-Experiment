@@ -843,88 +843,99 @@ if INSTRUCTOR_KEY:
 
 with st.expander("📘 Theory"):
 
-    st.markdown(r"""
-### Region I — Incident and Reflected Waves
+    st.markdown("### Region I — Incident and Reflected Waves")
 
-For \(x < 0\),
+    st.markdown("For \(x < 0\),")
 
-\[
-\psi_I(x) = e^{ikx} + r e^{-ikx}
-\]
+    st.latex(
+        r"\psi_I(x) = e^{ikx} + r e^{-ikx}"
+    )
 
-where
+    st.markdown("where")
 
-\[
-k = \sqrt{\frac{2mE}{\hbar^2}}
-\]
+    st.latex(
+        r"k = \sqrt{\frac{2mE}{\hbar^2}}"
+    )
 
-The first term is the **incident wave**, and the second term is the
-**reflected wave**.
+    st.markdown(
+        """
+        The first term is the **incident wave**, and the second term is
+        the **reflected wave**.
+        """
+    )
 
----
+    st.markdown("---")
 
-### Region II — Inside the Barrier
+    st.markdown("### Region II — Inside the Barrier")
 
-For
+    st.markdown("For")
 
-\[
-0 \leq x \leq a
-\]
+    st.latex(
+        r"0 \leq x \leq a"
+    )
 
-the wavefunction is
+    st.markdown("the wavefunction is")
 
-\[
-\psi_{II}(x) =
-C e^{\kappa x} + D e^{-\kappa x}
-\]
+    st.latex(
+        r"\psi_{II}(x) = C e^{\kappa x} + D e^{-\kappa x}"
+    )
 
-where, for \(E < V_0\),
+    st.markdown("where, for \(E < V_0\),")
 
-\[
-\kappa =
-\sqrt{\frac{2m(V_0-E)}{\hbar^2}}
-\]
+    st.latex(
+        r"\kappa = \sqrt{\frac{2m(V_0-E)}{\hbar^2}}"
+    )
 
-The wavefunction therefore decays exponentially inside the
-**classically forbidden region**.
+    st.markdown(
+        """
+        The wavefunction therefore decays exponentially inside the
+        **classically forbidden region**.
+        """
+    )
 
----
+    st.markdown("---")
 
-### Region III — Transmitted Wave
+    st.markdown("### Region III — Transmitted Wave")
 
-For \(x > a\),
+    st.markdown("For \(x > a\),")
 
-\[
-\psi_{III}(x) = t e^{ikx}
-\]
+    st.latex(
+        r"\psi_{III}(x) = t e^{ikx}"
+    )
 
-The magnitude of the transmission amplitude is
+    st.markdown(
+        "The magnitude of the transmission amplitude is"
+    )
 
-\[
-|t|
-\]
+    st.latex(
+        r"|t|"
+    )
 
-and the transmission coefficient is
+    st.markdown(
+        "and the transmission coefficient is"
+    )
 
-\[
-T = |t|^2
-\]
+    st.latex(
+        r"T = |t|^2"
+    )
 
-Similarly,
+    st.markdown("Similarly,")
 
-\[
-R = |r|^2
-\]
+    st.latex(
+        r"R = |r|^2"
+    )
 
-and conservation of probability gives
+    st.markdown(
+        "and conservation of probability gives"
+    )
 
-\[
-R + T = 1
-\]
+    st.latex(
+        r"R + T = 1"
+    )
 
-up to numerical precision.
-""")
-
+    st.markdown(
+        "up to numerical precision."
+    )
 
 # ============================================================
 # PARAMETERS
